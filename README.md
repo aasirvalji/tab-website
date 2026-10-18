@@ -1,4 +1,4 @@
-# Tab public website — Cloudflare deployment pending
+# Tab public website
 
 Static public pages only; this is not a web version of Tab. No scripts, analytics,
 browser-side Supabase calls, group lookups, signup forms or secret keys are included.
@@ -13,10 +13,17 @@ Confirmed public details:
 
 ## Content and publication gate
 
-The privacy and terms pages are still drafts. The owner must approve their wording,
-set the effective date, confirm hosted backup/log retention and remove their draft
-notices. Do not invent a retention duration or claim a complete legal review.
-The website's Cloudflare request processing is included in the privacy draft.
+The owner approved the privacy/terms wording and actual-first-publication date
+approach on October 18, 2026. That wording is implemented locally, including the
+owner's confirmation that writing new Auth audit events into the database is off.
+It does not promise deletion of old audit records or disable provider-side logs.
+Provider logs/backups use configuration-based wording, not an invented duration.
+Approval does not establish a complete jurisdiction-specific legal review.
+
+The owner separately approved the website-only production push/deployment on
+October 18, 2026. Both legal pages are dated `2026-10-18` for that publication.
+The Cloudflare request-processing disclosure is included in the privacy policy.
+The checker still rejects draft notices and unresolved placeholders.
 
 Before the app is available, the homepage and fallback pages show a neutral
 pre-release notice, not an invented/broken App Store link. Once the real listing
@@ -52,7 +59,6 @@ node scripts/website/verify.cjs --site docs/release/website
 node scripts/website/verify.cjs --site docs/release/website --publish
 ```
 
-The last command intentionally fails until the legal drafts are approved/completed.
 Export into a new absolute directory; existing destinations are never overwritten:
 
 ```sh
@@ -63,14 +69,14 @@ Only the allowlisted public assets, this README, `.gitignore` and the standalone
 checker are copied. Apple `.p8` files and all app/backend files are excluded.
 Unexpected files, symlinks or secret-like content block the export.
 
-## Cloudflare Pages setup — after approval
+## Approved Cloudflare Pages target
 
 GitHub repository target: `aasirvalji/tab-website` (website files only).
-The owner approved creating this public repository and uploading its website source.
-That approval does not authorize Cloudflare deployment of the unfinished legal pages.
-Proposed Cloudflare project: `tab-aasirvalji`; availability is not yet confirmed.
-Record the actual assigned `*.pages.dev` hostname; do not configure the iOS app
-with an assumed address.
+Production branch: `main`. The owner's dashboard screenshot confirms Pages project
+`tab-website`, hostname `tab-website-dxi.pages.dev`, the connected GitHub repository
+and automatic deployments. The owner explicitly approved pushing the completed,
+dated public website to that target. This does not authorize future production
+pushes, Supabase changes, Apple credential uploads or App Store submission.
 
 1. Sign in to Cloudflare and verify the account email.
 2. Open Workers & Pages → Create application → Pages → Import an existing Git
@@ -87,10 +93,10 @@ with an assumed address.
    | Build output directory | `public` |
 
 5. Leave environment secrets, optional Web Analytics and Pages Functions unset.
-6. Stop before deploying until the owner approves the completed pages and exact
-   target. Do not bypass the publication checker with `exit 0`.
+6. Obtain exact-target approval before any subsequent production deployment.
+   Do not bypass the checker with `exit 0`.
 
-No extra server or purchased domain is needed for this proposed `pages.dev` setup.
+No extra server or purchased domain is needed for this `pages.dev` setup.
 The Cloudflare Git integration can automatically publish future commits: treat
 pushes to the production branch as deployments once connected, and get approval.
 

@@ -1,54 +1,132 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow">
-<title>Tab Privacy Policy — Draft</title><link rel="stylesheet" href="/styles.css"></head><body>
-<header><a class="brand" href="/" aria-label="Tab home">Tab<span class="brand-dot" aria-hidden="true">.</span></a></header>
-<main id="main">
-<h1>Tab Privacy Policy</h1>
-<p class="draft">DRAFT: Aasir Valji must approve this policy, set [EFFECTIVE_DATE],
-confirm [BACKUP_AND_LOG_RETENTION], and remove this notice before publication.</p>
-<p>Effective: [EFFECTIVE_DATE]. Tab is operated by Aasir Valji.
-Contact: <a href="mailto:aasir.valji@hotmail.com">aasir.valji@hotmail.com</a>.</p>
-<h2>What Tab stores</h2>
-<p>Tab uses Sign in with Apple and Supabase to manage your account. We store an account
-identifier, your display name and, when provided by Apple, an email or private relay address.
-Groups store their names, member labels, expenses, amounts, splits, notes and recorded repayments.
-If you enable push, we store an Apple push device token to deliver group updates.</p>
-<h2>Why and with whom</h2>
-<p>We use this data to provide account access, invitations, shared ledgers and optional alerts.
-Group members can see that group's shared records and member labels. Invite holders can see
-limited group and unclaimed-member information to join. Supabase processes hosted account
-and database data; Apple processes sign-in and push delivery. Tab does not include advertising,
-tracking or third-party analytics SDKs, and it does not move money or connect to banks.</p>
-<h2>Visiting this website</h2>
-<p>The public website is planned to be hosted by Cloudflare Pages, with source files stored
-on GitHub. The pages do not make browser-side requests to your group or expense records.
-Hosting services may process request information, such as your IP address and the
-requested URL, to deliver and protect the site. An invitation URL includes its invitation
-code; share it only with the intended recipient. No website analytics script is included
-in these pages.</p>
-<h2>Your device and preferences</h2>
-<p>The app stores session information and preferences on your device. You can change your
-display name, turn alerts off or sign out in Profile. Apple notification permission can also
-be changed in iPhone Settings. No contacts, location or photo-library permission is requested.</p>
-<h2>Deleting your account</h2>
-<p>Profile → Delete account asks you to confirm with Apple. Successful deletion revokes
-Tab's Apple access and deletes your Auth account and profile. Your account's device
-registrations and invitation links are removed. Your member labels become “Former member”
-and cannot be reclaimed.</p>
-<p>Shared expense and repayment history remains available to other group members, without
-your account-linked actor fields, so their balances stay correct. Free-text expense descriptions
-or notes entered by you or others are shared records and may still contain personal information.
-Please contact <a href="mailto:aasir.valji@hotmail.com">aasir.valji@hotmail.com</a>
-about such content or other privacy requests.</p>
-<h2>Operational retention and security</h2>
-<p>Hosted services may retain operational logs and backups. [BACKUP_AND_LOG_RETENTION].
-Connections use HTTPS, and database access is restricted to authorized group members.
-No internet service can guarantee absolute security.</p>
-<h2>Contact and changes</h2>
-<p>Questions or requests: <a href="mailto:aasir.valji@hotmail.com">aasir.valji@hotmail.com</a>.
-If this policy changes, we will update this page and its effective date.
-Aasir Valji is responsible for reviewing applicable obligations and this policy.</p>
-</main>
-<footer><nav aria-label="Website"><a href="/">Home</a><a href="/support">Support</a><a href="/terms">Terms</a></nav></footer>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Tab Privacy Policy</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header><a class="brand" href="/" aria-label="Tab home">Tab<span class="brand-dot" aria-hidden="true">.</span></a></header>
+  <main id="main">
+    <h1>Tab Privacy Policy</h1>
+    <p>Effective: 2026-10-18.</p>
+
+    <h2>1. Who operates Tab</h2>
+    <p>Tab is operated by Aasir Valji. For support or privacy questions, contact
+      <a href="mailto:aasir.valji@hotmail.com">aasir.valji@hotmail.com</a>.</p>
+    <p>Tab helps people record shared expenses and repayments. It does not transfer
+      money, connect to banks or verify that a real payment has happened.</p>
+
+    <h2>2. Information we collect</h2>
+    <p><strong>Account information.</strong> When you use Sign in with Apple, Apple
+      and Supabase handle authentication. Tab stores your account identifier and
+      display name. Supabase may also receive the email address or private relay
+      address provided by Apple.</p>
+    <p><strong>Shared records.</strong> We store group names and settings, member
+      names and identifiers, invitations, expense descriptions, amounts, dates,
+      splits, notes, recorded repayments and related activity. Other participants
+      can enter information about you, such as a placeholder member name, before
+      you create a Tab account.</p>
+    <p><strong>Device information.</strong> Tab stores session information and
+      preferences on your device. If optional push notifications become available
+      and you enable them, your Apple push device token and notification environment
+      are used to deliver alerts.</p>
+    <p><strong>Technical and support information.</strong> Our service providers may
+      process request and security information, such as IP addresses, requested URLs,
+      timestamps, authentication events and error information, to operate and protect
+      the service. If you contact support, we receive your email address and the
+      information you choose to send. Please do not email passwords, Apple authorization
+      codes, private keys or unnecessary financial details.</p>
+    <p>Tab does not request access to your contacts, location or photo library.
+      It does not collect bank credentials or payment-card details.</p>
+
+    <h2>3. How information is used</h2>
+    <p>We use information to sign you in, manage groups and invitations, calculate
+      and explain balances, synchronize shared records, support optional notifications,
+      respond to requests and maintain service security and reliability.</p>
+    <p>Tab does not include advertising or third-party analytics SDKs. We do not sell
+      your personal information or use shared expense records for advertising.
+      The app writes basic feature-event names to the device's system log; it does
+      not send those events to a separate analytics service.</p>
+
+    <h2>4. Who can see information</h2>
+    <p>Group members can see that group's shared records and member labels according
+      to the app's access rules. Someone with a valid invitation can see limited
+      group and unclaimed-member information needed to join. Keep invitation links
+      private and share them only with intended recipients.</p>
+    <p>Supabase provides account, database and synchronization services. Apple
+      provides sign-in and, if used, push delivery. Cloudflare Pages hosts the public
+      website, and GitHub stores its public source files. The public website does
+      not query or display your private group or expense records.</p>
+    <p>These providers process information required for their services under their
+      applicable terms and privacy policies. Where a provider processes personal
+      information on our behalf, we require protections consistent with this policy
+      and applicable law. We may also disclose information where legally required
+      or necessary to respond to a security incident or protect users' rights.</p>
+    <p>Our Supabase project is hosted in the United States. Providers may process
+      information in other countries, so processing may occur outside the country
+      where you live.</p>
+
+    <h2>5. Retention and account deletion</h2>
+    <p><strong>Account and profile.</strong> We keep account information to provide
+      your account. You can request account deletion through Profile → Delete account.
+      The app asks for fresh Apple confirmation. When deletion succeeds, Tab revokes
+      its Apple access and removes your Supabase account and application profile.
+      Account-linked push registrations and relevant invitation links are removed.
+      If deletion fails, the app reports the failure so you can retry or contact support.</p>
+    <p><strong>Shared history.</strong> Account deletion does not erase the group's
+      shared expense, repayment and activity history. That history remains to
+      preserve other members' records and balances. Your membership is retired,
+      its account link is removed, its display label becomes “Former member,” and
+      it cannot be claimed by another account. Account-linked creator and
+      activity-actor references are removed.</p>
+    <p>Tab does not currently apply an automatic age-based expiry to shared ledger
+      records. Deleting an expense or repayment in the app hides it from active
+      calculations but can retain the underlying record and related activity.
+      Free-text names, descriptions or notes entered by you or others may still
+      contain personal information. Contact
+      <a href="mailto:aasir.valji@hotmail.com">aasir.valji@hotmail.com</a>
+      about information in shared records or another privacy request.</p>
+    <p><strong>Logs, backups and support.</strong> Operational logs and backup copies,
+      where maintained, follow the retention and recovery arrangements of the
+      relevant provider and configuration. These periods are separate from the
+      active account database and may differ by service or plan. Writing new
+      authentication audit events into our Supabase database is currently disabled;
+      external provider logs may still be retained. This setting does not establish
+      whether historical database audit records remain. We do not promise that every
+      log or backup copy disappears immediately when an account is deleted.</p>
+    <p>We use support correspondence to answer your request and handle necessary
+      follow-up. Retention decisions consider that purpose, security needs and
+      applicable obligations. Contact us to request deletion of support correspondence
+      or information in logs.</p>
+
+    <h2>6. Website requests and device choices</h2>
+    <p>Our public pages do not include analytics scripts or set their own tracking
+      cookies. Hosting providers may process technical request information for
+      delivery and security. An invitation URL contains its invitation code, so
+      that code is included in the request when the link is opened in a browser.
+      The pages do not display private group data or automatically join a group for you.</p>
+    <p>You can edit your display name and sign out in the app. Where notifications
+      are available, you can manage them in the app and in iPhone Settings.
+      Uninstalling the app does not delete your account or shared group history.</p>
+
+    <h2>7. Security and privacy requests</h2>
+    <p>Tab uses HTTPS and server-side access controls to restrict ordinary group
+      data to authorized members. No internet service can guarantee absolute security.</p>
+    <p>For access, correction, deletion or another privacy request, email
+      <a href="mailto:aasir.valji@hotmail.com">aasir.valji@hotmail.com</a>.
+      We may need to verify your identity without asking for your password or
+      Apple authorization code. We will handle requests according to applicable
+      law, including any requirements concerning shared records or other people's
+      information.</p>
+
+    <h2>8. Changes</h2>
+    <p>If this policy changes, we will update its text and effective date.
+      Where required, we will provide additional notice or request consent.</p>
+  </main>
+  <footer><nav aria-label="Website"><a href="/">Home</a><a href="/support">Support</a><a href="/terms">Terms</a></nav></footer>
+</body>
+</html>
