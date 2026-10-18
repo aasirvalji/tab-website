@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["9S29AL28QR.com.aasirvalji.tab"],
+        "components": [
+          { "/": "/invite/*", "comment": "Tab group invitation" },
+          { "/": "/group/*", "comment": "Open a group; membership is checked in the app/backend" }
+        ]
+      }
+    ]
+  }
+}

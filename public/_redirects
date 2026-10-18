@@ -1,0 +1,4 @@
+# Internal 200 proxies preserve the original invitation/group URL in the browser.
+# Never redirect or proxy the Apple association file.
+/invite/* /invite 200
+/group/* /group 200

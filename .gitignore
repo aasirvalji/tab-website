@@ -1,0 +1,7 @@
+# Keep credentials and local machine files out of the website-only repository.
+.DS_Store
+.env
+.env.*
+*.p8
+AuthKey_*
+node_modules/
