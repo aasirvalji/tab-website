@@ -12,7 +12,7 @@
   <header><a class="brand" href="/" aria-label="Tab home">Tab<span class="brand-dot" aria-hidden="true">.</span></a></header>
   <main id="main">
     <h1>Tab Privacy Policy</h1>
-    <p>Effective: 2026-10-18.</p>
+    <p>Effective: 2026-10-25.</p>
 
     <h2>1. Who operates Tab</h2>
     <p>Tab is operated by Aasir Valji. For support or privacy questions, contact
@@ -71,33 +71,56 @@
       where you live.</p>
 
     <h2>5. Retention and account deletion</h2>
-    <p><strong>Account and profile.</strong> We keep account information to provide
-      your account. You can request account deletion through Profile → Delete account.
-      The app asks for fresh Apple confirmation. When deletion succeeds, Tab revokes
-      its Apple access and removes your Supabase account and application profile.
-      Account-linked push registrations and relevant invitation links are removed.
-      If deletion fails, the app reports the failure so you can retry or contact support.</p>
-    <p><strong>Shared history.</strong> Account deletion does not erase the group's
-      shared expense, repayment and activity history. That history remains to
-      preserve other members' records and balances. Your membership is retired,
-      its account link is removed, its display label becomes “Former member,” and
-      it cannot be claimed by another account. Account-linked creator and
-      activity-actor references are removed.</p>
-    <p>Tab does not currently apply an automatic age-based expiry to shared ledger
-      records. Deleting an expense or repayment in the app hides it from active
-      calculations but can retain the underlying record and related activity.
-      Free-text names, descriptions or notes entered by you or others may still
-      contain personal information. Contact
-      <a href="mailto:aasir.valji@hotmail.com">aasir.valji@hotmail.com</a>
-      about information in shared records or another privacy request.</p>
-    <p><strong>Logs, backups and support.</strong> Operational logs and backup copies,
-      where maintained, follow the retention and recovery arrangements of the
-      relevant provider and configuration. These periods are separate from the
-      active account database and may differ by service or plan. Writing new
-      authentication audit events into our Supabase database is currently disabled;
-      external provider logs may still be retained. This setting does not establish
-      whether historical database audit records remain. We do not promise that every
-      log or backup copy disappears immediately when an account is deleted.</p>
+    <p><strong>Account and profile.</strong> We keep account information to provide your account.
+      You can delete your account through Profile → Delete account. The app asks for
+      fresh Apple confirmation. When deletion succeeds, Tab revokes its Apple access
+      and removes your Supabase account and application profile. Account-linked push
+      registrations and relevant invitation links are removed. If deletion fails, the
+      app reports the failure so you can retry with fresh Apple confirmation or contact
+      support. You do not need to contact support to initiate ordinary account deletion.</p>
+    <p><strong>Names, notes and contributed text.</strong> Account deletion removes your profile name
+      and account links. In shared groups, your membership is retired, its label becomes
+      “Former member,” and another account cannot claim it.</p>
+    <p>Group names and icons, expense descriptions and notes that you created or
+      contributed to are replaced with generic labels or removed. Copies in related
+      activity are cleared too. Labels you entered for unclaimed members become
+      “Member”; a member who already claimed and accepted their identity keeps their own
+      label when the original inviter deletes their account.</p>
+    <p>Text may have multiple contributors. To avoid retaining a departing account's
+      content, the current shared text can be cleared even if another member edited
+      it later. Merely editing an amount without changing the text does not add text
+      authorship under the current system. Older activity records do not distinguish
+      every changed field, so their historical editors are treated conservatively as
+      contributors. Information with already-removed creator or actor links is also
+      cleaned conservatively when the revised system is introduced.</p>
+    <p><strong>Shared financial history.</strong> If a group still has another claimed account, Tab
+      keeps the amounts, currencies, dates, splits, repayments and stable group-member
+      ledger identifiers needed to preserve and explain that account's balances.
+      Account-linked creator and activity-actor references for the deleted account are
+      removed. These records do not transfer money or prove a payment occurred.
+      Retaining this structure is not described as a legal requirement.</p>
+    <p>The remaining context and amounts may still be recognizable to people who
+      participated in the group. Replacing a name and removing an account link does not
+      guarantee irreversible anonymity. If no other claimed account remains, the
+      group and its associated application records are deleted, including archived
+      groups and groups that have only unclaimed placeholders.</p>
+    <p>There is no automatic age-based expiry for another account's remaining shared
+      financial history. Deleting an individual expense or repayment normally hides
+      it from active calculations but can retain the underlying financial record and
+      activity. Account deletion additionally applies the text cleanup described above.</p>
+    <p>Text independently entered by other people can still mention someone else.
+      Contact <a href="mailto:aasir.valji@hotmail.com">aasir.valji@hotmail.com</a>
+      about information in another person's content
+      or a further privacy request. We handle such requests under applicable
+      requirements, including other participants' rights.</p>
+    <p><strong>Logs, backups and support.</strong> Operational logs and backup copies, where
+      maintained, follow the retention and recovery arrangements of the relevant
+      provider and configuration. These periods are separate from the active account
+      database and may differ by service or plan. Writing new authentication audit
+      events into our Supabase database is currently disabled; external provider logs
+      may still be retained. This setting does not establish whether historical
+      database audit records remain. We do not promise that every log or backup copy
+      disappears immediately when an account is deleted.</p>
     <p>We use support correspondence to answer your request and handle necessary
       follow-up. Retention decisions consider that purpose, security needs and
       applicable obligations. Contact us to request deletion of support correspondence

@@ -21,7 +21,11 @@ Provider logs/backups use configuration-based wording, not an invented duration.
 Approval does not establish a complete jurisdiction-specific legal review.
 
 The owner separately approved the website-only production push/deployment on
-October 18, 2026. Both legal pages are dated `2026-10-18` for that publication.
+October 18, 2026. The owner approved the privacy-policy revision and its publication
+on October 25 after native deletion and fresh sign-in verification. Privacy is
+dated `2026-10-25`; the unchanged terms retain their `2026-10-18` publication date.
+The revised policy explains contributed-text cleanup, retired identities,
+preserved survivor finances and removal of groups without another claimed account.
 The Cloudflare request-processing disclosure is included in the privacy policy.
 The checker still rejects draft notices and unresolved placeholders.
 
